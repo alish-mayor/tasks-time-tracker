@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/clock.png">
+    <title>Task time tracker</title>
+</head>
+<body>
+    <h1>Tasks time <br> tracker app</h1>
+    <h2 id="timer">00:00:00</h2>
+    <input type="text" name="action" id="task-input" placeholder="Write your task...">
+    <div id="buttons">   
+        <button class="btn start">Start task</button>
+        <button class="btn stop">Finish task</button>
+        <button class="btn pause">Pause task</button>        
+        <button class="btn clear">Clear all tasks</button>
+    </div>
+    <ol id="list">
+        <h3>Finished tasks for the day</h3>
+    </ol>
+    <script src="script.js"></script>
+</body>
+</html>

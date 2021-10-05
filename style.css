@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --primary: rgb(79, 79, 219);
+  --start: rgb(72, 129, 72);
+  --stop: rgb(209, 65, 65);
+  --pause: rgb(221, 208, 87);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+#timer {
+  font-size: 2rem;
+}
+
+#task-input {
+  border: 2px solid var(--primary);
+  padding: 0.7rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 280px;
+}
+
+#buttons {
+  margin-top: 1rem;
+  display: flex;
+  width: 250px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn {
+  background-color: transparent;
+  border-width: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 0.5rem;
+  width: 100px;
+  height: 70px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn:nth-child(3) {
+  margin-top: 1rem;
+}
+
+.btn:last-child {
+  margin-top: 1rem;
+}
+
+.start {
+  color: var(--start);
+  border-color: var(--start);
+}
+
+.start:hover {
+  background-color: var(--start);
+}
+
+.stop {
+  color: var(--stop);
+  border-color: var(--stop);
+}
+
+.stop:hover {
+  background-color: var(--stop);
+}
+
+.pause {
+  color: var(--pause);
+  border-color: var(--pause);
+}
+
+.pause:hover {
+  background-color: var(--pause);
+}
+
+.clear {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.clear:hover {
+  background-color: var(--primary);
+}
